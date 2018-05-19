@@ -35,6 +35,15 @@ slack_msg_quit = {
 def change_random_number():
 	global num
 	num = random.randint(0,len(images)-1)
+	global slack_msg_coffee
+	slack_msg_coffee = {
+	'text' : 'Fresh Pot!', 
+	'username': 'coffee-bot', 
+	'icon_emoji': ':coffeebean:',
+	'attachments':[{
+		'image_url': images[num]
+		}]
+	}
 
 def change_switch_status(status):
 	global switch_is_up
