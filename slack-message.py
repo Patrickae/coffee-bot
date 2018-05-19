@@ -14,12 +14,13 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/oj05uAreWGy8U/giphy.gif',
  'https://media.giphy.com/media/3o7abKKlDojVbnZhAs/giphy.gif',
  'https://media.giphy.com/media/3oKIPx16LFvftHPLiM/giphy.gif']
+
 slack_msg_coffee = {
 	'text' : 'Fresh Pot!', 
 	'username': 'coffee-bot', 
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
-		'image_url': images[random.randint(0,len(images))]
+		'image_url': images[random.randint(0,len(images)-1)]
 	}]
 }
 slack_msg_quit = {
