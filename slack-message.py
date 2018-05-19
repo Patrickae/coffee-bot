@@ -38,14 +38,14 @@ try:
 		if (GPIO.input(7) == 1):
 			if (coffee_status == 0):
 				print('coffee brewin')
-				coffee_status = 1
+				coffee_status = 0
 		else:
 			if (coffee_status == 1):
 				print('fresh pot')
 				coffee_status = 1
 
 except KeyboardInterrupt:
-	GPIO.clenup()
+	GPIO.cleanup()
 except:
 	requests.post(web_hook_url, data=json.dumps(slack_msg_quit))
 
