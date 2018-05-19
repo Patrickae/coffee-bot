@@ -27,14 +27,15 @@ slack_msg_quit = {
 	'username': 'coffee-bot', 
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
-		'image_url': 'https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif'
+		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
 	}]
 }
 
 # requests.post(web_hook_url, data=json.dumps(slack_msg_coffee) )
 def change_switch_status(status):
+	global switch_is_up
 	switch_is_up = status
-	pass
+	
 try:
 	while True:
 		if (GPIO.input(7) == 1):
