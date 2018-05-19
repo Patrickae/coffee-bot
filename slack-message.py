@@ -9,12 +9,14 @@ num = 0
 web_hook_url = 'https://hooks.slack.com/services/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'
 images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/Cqz6bKvjmFdyo/giphy.gif',
- 'https://media.giphy.com/media/l4EoUY5KeQszUCAiA/giphy.gif',
  'https://media.giphy.com/media/R1fqW7QTkR8je/giphy.gif',
  'https://media.giphy.com/media/5xaYLxI6riEuY/giphy.gif',
  'https://media.giphy.com/media/oj05uAreWGy8U/giphy.gif',
  'https://media.giphy.com/media/3o7abKKlDojVbnZhAs/giphy.gif',
- 'https://media.giphy.com/media/3oKIPx16LFvftHPLiM/giphy.gif']
+ 'https://media.giphy.com/media/3oKIPx16LFvftHPLiM/giphy.gif',
+ 'https://media.giphy.com/media/11Y6s1RQdou6mA/giphy.gif',
+ 'https://media.giphy.com/media/7jdyW2bKeUcI8/giphy.gif',
+ 'https://media.giphy.com/media/cKhpesDJ5iofu/giphy.gif']
 
 slack_msg_coffee = {
 	'text' : 'Fresh Pot!', 
