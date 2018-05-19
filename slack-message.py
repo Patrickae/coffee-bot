@@ -5,6 +5,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 switch_is_up = False
+num = 0
 web_hook_url = 'https://hooks.slack.com/services/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'
 images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/Cqz6bKvjmFdyo/giphy.gif',
@@ -31,7 +32,6 @@ slack_msg_quit = {
 		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
 	}]
 }
-num = 0
 def change_random_number():
 	global num
 	num = random.randint(0,len(images)-1)
