@@ -31,11 +31,10 @@ slack_msg_quit = {
 	}]
 }
 
-# requests.post(web_hook_url, data=json.dumps(slack_msg_coffee) )
 def change_switch_status(status):
 	global switch_is_up
 	switch_is_up = status
-	
+
 try:
 	while True:
 		if (GPIO.input(7) == 1):
@@ -46,6 +45,7 @@ try:
 			if (switch_is_up == True):
 				change_switch_status(False)
 				print('fresh pot')
+				requests.post(web_hook_url, data=json.dumps(slack_msg_coffee))
 
 except KeyboardInterrupt:
 	GPIO.cleanup()
