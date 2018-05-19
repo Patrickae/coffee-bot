@@ -40,7 +40,7 @@ try:
 				print('coffee brewin')
 				coffee_status = 1
 		else:
-			if (coffee_status = 1):
+			if (coffee_status == 1):
 				print('fresh pot')
 				coffee_status = 1
 
