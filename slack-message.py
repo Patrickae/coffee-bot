@@ -20,7 +20,7 @@ slack_msg_coffee = {
 	'username': 'coffee-bot', 
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
-		'image_url': images[random.randint(0,len(images)-1)]
+		'image_url': images[num]
 	}]
 }
 slack_msg_quit = {
@@ -31,6 +31,10 @@ slack_msg_quit = {
 		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
 	}]
 }
+
+def change_random_number():
+	global num
+	num = random.randint(0,len(images)-1)
 
 def change_switch_status(status):
 	global switch_is_up
@@ -46,6 +50,7 @@ try:
 			if (switch_is_up == True):
 				change_switch_status(False)
 				print('fresh pot')
+				change_random_number()
 				requests.post(web_hook_url, data=json.dumps(slack_msg_coffee))
 
 except KeyboardInterrupt:
