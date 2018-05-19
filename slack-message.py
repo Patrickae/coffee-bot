@@ -31,7 +31,7 @@ slack_msg_quit = {
 		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
 	}]
 }
-
+num = 0
 def change_random_number():
 	global num
 	num = random.randint(0,len(images)-1)
