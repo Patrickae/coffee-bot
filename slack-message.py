@@ -16,7 +16,8 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/3oKIPx16LFvftHPLiM/giphy.gif',
  'https://media.giphy.com/media/11Y6s1RQdou6mA/giphy.gif',
  'https://media.giphy.com/media/7jdyW2bKeUcI8/giphy.gif',
- 'https://media.giphy.com/media/cKhpesDJ5iofu/giphy.gif']
+ 'https://media.giphy.com/media/cKhpesDJ5iofu/giphy.gif',
+ 'https://media.giphy.com/media/E5NOoH80VSt0I/giphy.gif']
 
 slack_msg_coffee = {
 	'text' : 'Fresh Pot!', 
