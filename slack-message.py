@@ -6,7 +6,9 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 switch_is_up = False
 num = 0
-web_hook_url = 'https://hooks.slack.com/services/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'
+web_hook_url = 'https://hooks.slack.com/services/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'
+
+
 images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/Cqz6bKvjmFdyo/giphy.gif',
  'https://media.giphy.com/media/R1fqW7QTkR8je/giphy.gif',
@@ -20,16 +22,16 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/E5NOoH80VSt0I/giphy.gif']
 
 slack_msg_coffee = {
-	'text' : 'Fresh Pot!', 
-	'username': 'coffee-bot', 
+	'text' : 'Fresh Pot!',
+	'username': 'coffee-bot',
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
 		'image_url': images[num]
 	}]
 }
 slack_msg_quit = {
-	'text' : 'Coffe bot not listening', 
-	'username': 'coffee-bot', 
+	'text' : 'Coffe bot not listening',
+	'username': 'coffee-bot',
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
 		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
@@ -40,8 +42,8 @@ def change_random_number():
 	num = random.randint(0,len(images)-1)
 	global slack_msg_coffee
 	slack_msg_coffee = {
-	'text' : 'Fresh Pot!', 
-	'username': 'coffee-bot', 
+	'text' : 'Fresh Pot!',
+	'username': 'coffee-bot',
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
 		'image_url': images[num]
@@ -71,5 +73,4 @@ except KeyboardInterrupt:
 except:
 	requests.post(web_hook_url, data=json.dumps(slack_msg_quit))
 
-
-# https://hooks.slack.com/services/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
+# https://hooks.slack.com/services/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
