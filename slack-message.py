@@ -63,8 +63,9 @@ def change_switch_status(status):
 	global switch_is_up
 	switch_is_up = status
 
+requests.post(web_hook_url, data=json.dumps(slack_msg_online))
+
 try:
-  requests.post(web_hook_url, data=json.dumps(slack_msg_online))
 	while True:
 		if (GPIO.input(7) == 1):
 			if (switch_is_up == False):
