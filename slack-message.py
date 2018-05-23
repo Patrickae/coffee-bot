@@ -21,6 +21,9 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/cKhpesDJ5iofu/giphy.gif',
  'https://media.giphy.com/media/E5NOoH80VSt0I/giphy.gif']
 
+
+
+
 slack_msg_coffee = {
 	'text' : 'Fresh Pot!',
 	'username': 'coffee-bot',
@@ -29,6 +32,9 @@ slack_msg_coffee = {
 		'image_url': images[num]
 	}]
 }
+
+
+
 slack_msg_quit = {
 	'text' : 'Coffe bot not listening',
 	'username': 'coffee-bot',
@@ -37,12 +43,15 @@ slack_msg_quit = {
 		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
 	}]
 }
+
+
+
 slack_msg_online = {
   'text' : 'Coffe bot is online',
   'username': 'coffee-bot',
   'icon_emoji': ':coffeebean:',
   'attachments':[{
-    'image_url': 'https://media.giphy.com/media/119gdJbeNRRepO/giphy.gif'
+    'image_url': 'https://media.giphy.com/media/b6iVj3IM54Abm/giphy.gif'
   }]
 }
 
