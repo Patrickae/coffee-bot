@@ -37,6 +37,15 @@ slack_msg_quit = {
 		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
 	}]
 }
+slack_msg_online = {
+  'text' : 'Coffe bot is online',
+  'username': 'coffee-bot',
+  'icon_emoji': ':coffeebean:',
+  'attachments':[{
+    'image_url': 'https://media.giphy.com/media/119gdJbeNRRepO/giphy.gif'
+  }]
+}
+
 def change_random_number():
 	global num
 	num = random.randint(0,len(images)-1)
@@ -55,6 +64,7 @@ def change_switch_status(status):
 	switch_is_up = status
 
 try:
+  requests.post(web_hook_url, data=json.dumps(slack_msg_online))
 	while True:
 		if (GPIO.input(7) == 1):
 			if (switch_is_up == False):
