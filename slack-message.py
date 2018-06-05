@@ -19,7 +19,8 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/11Y6s1RQdou6mA/giphy.gif',
  'https://media.giphy.com/media/7jdyW2bKeUcI8/giphy.gif',
  'https://media.giphy.com/media/cKhpesDJ5iofu/giphy.gif',
- 'https://media.giphy.com/media/E5NOoH80VSt0I/giphy.gif']
+ 'https://media.giphy.com/media/E5NOoH80VSt0I/giphy.gif',
+ 'https://media.giphy.com/media/yNr8LdsnuqdnfbgVXN/giphy.gif']
 
 
 
@@ -40,7 +41,7 @@ slack_msg_quit = {
 	'username': 'coffee-bot',
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
-		'image_url': 'https://media.giphy.com/media/l117HrgEinjIA/giphy.gif'
+		'image_url': 'https://media.giphy.com/media/8zjvJAxHYMFGg/giphy.gif'
 	}]
 }
 
@@ -51,7 +52,7 @@ slack_msg_online = {
   'username': 'coffee-bot',
   'icon_emoji': ':coffeebean:',
   'attachments':[{
-    'image_url': 'https://media.giphy.com/media/b6iVj3IM54Abm/giphy.gif'
+    'image_url': 'https://media.giphy.com/media/LqUA1opXygflK/giphy.gif'
   }]
 }
 
