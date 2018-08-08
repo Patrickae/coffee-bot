@@ -28,7 +28,7 @@ slack_msg_coffee = {
 	}]
 }
 slack_msg_quit = {
-	'text' : 'Coffe bot not listening', 
+	'text' : 'Coffe bot not listening :(', 
 	'username': 'coffee-bot', 
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
