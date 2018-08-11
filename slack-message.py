@@ -26,7 +26,7 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
 
 
 slack_msg_coffee = {
-	'text' : 'Fresh Pot!!!!',
+	'text' : 'Fresh Pot!!!!!!!!!!!!!!!!!!!!!!!!!!',
 	'username': 'coffee-bot',
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
