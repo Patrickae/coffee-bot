@@ -26,7 +26,7 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
 
 
 slack_msg_coffee = {
-	'text' : 'Fresh Pot!',
+	'text' : 'Fresh Pot!!!!!!!!!!!!!!!!!!!!!!!!!!',
 	'username': 'coffee-bot',
 	'icon_emoji': ':coffeebean:',
 	'attachments':[{
@@ -93,7 +93,7 @@ except KeyboardInterrupt:
 	requests.post(web_hook_url, data=json.dumps(slack_msg_quit))
 except:
 	requests.post(web_hook_url, data=json.dumps(slack_msg_quit))
-
+# https://hooks.slack.com/services/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
 # https://hooks.slack.com/services/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
 
 
