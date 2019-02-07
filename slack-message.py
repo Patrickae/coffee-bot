@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 switch_is_up = False
 num = 0
-web_hook_url = 'https://hooks.slack.com/services/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'
+web_hook_url = 'https://hooks.slack.com/services/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'
 
 
 images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
@@ -93,9 +93,10 @@ except KeyboardInterrupt:
 	requests.post(web_hook_url, data=json.dumps(slack_msg_quit))
 except:
 	requests.post(web_hook_url, data=json.dumps(slack_msg_quit))
-# https://hooks.slack.com/services/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
+
+# -home
 # https://hooks.slack.com/services/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
 
 
-# -home
+# -work
 # https://hooks.slack.com/services/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
