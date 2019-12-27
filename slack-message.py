@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 switch_is_up = False
 num = 0
-web_hook_url = 'https://hooks.slack.com/services/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'
+web_hook_url = 'https://hooks.slack.com/services/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'
 
 
 images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
@@ -23,8 +23,6 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/yNr8LdsnuqdnfbgVXN/giphy.gif']
 
 
-test_msg = {'text' : 'Message from Python'}
-requests.post(web_hook_url, data=json.dumps(test_msg))
 
 slack_msg_coffee = {
 	'text' : 'Fresh Pot!!!!!!!!!!!!!!!!!!!!!!!!!!',
