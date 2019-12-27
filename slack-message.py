@@ -23,7 +23,8 @@ images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
  'https://media.giphy.com/media/yNr8LdsnuqdnfbgVXN/giphy.gif']
 
 
-
+test_msg = {'text' : 'Message from Python'}
+requests.post(web_hook_url, data=json.dumps(test_msg))
 
 slack_msg_coffee = {
 	'text' : 'Fresh Pot!!!!!!!!!!!!!!!!!!!!!!!!!!',
