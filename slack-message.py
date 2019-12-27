@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 switch_is_up = False
 num = 0
-web_hook_url = 'https://hooks.slack.com/services/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'
+web_hook_url = 'https://hooks.slack.com/services/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'
 
 
 images = ['https://media.giphy.com/media/oGP0Sv692lb68/giphy.gif',
